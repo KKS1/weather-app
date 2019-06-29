@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- For Bootstrap responsiveness -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="cityInput">City</label>
+          <input
+            type="text"
+            class="form-control"
+            id="cityInput"
+            aria-describedby="city Input"
+            placeholder="Enter city"
+          />
+          <small id="cityInputHelp" class="form-text text-muted"
+            >Enter the city you want weather for.</small
+          >
+        </div>
+        <button type="submit" class="btn btn-primary">Get Weather</button>
+      </form>
+    </div>
+  </body>
+</html>

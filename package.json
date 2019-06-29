@@ -1,0 +1,16 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "A nodeJs based weather application",
+  "main": "index.js",
+  "repository": "https://github.com/KKS1/weather-app.git",
+  "author": "Kanwaljeet Kalra",
+  "license": "MIT",
+  "devDependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "server": "node server.js"
+  }
+}
