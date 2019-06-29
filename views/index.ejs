@@ -24,7 +24,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="/" method="post">
+      <form class="my-2" action="/" method="post">
         <div class="form-group">
           <label for="cityInput">City</label>
           <input
@@ -41,6 +41,11 @@
         </div>
         <button type="submit" class="btn btn-primary">Get Weather</button>
       </form>
+      <% if (locals.weather) { %>
+      <div class="alert alert-info" role="alert"><%= locals.weather %></div>
+      <% } else if(locals.error) { %>
+      <div class="alert alert-warning" role="alert"><%= locals.error %></div>
+      <% } %>
     </div>
   </body>
 </html>
